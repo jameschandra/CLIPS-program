@@ -295,7 +295,6 @@
 ;;;
 (defrule ask-WorstRadius
 	?q <- (ask worst_radius ?ans)
-	?breast <- (breast (worst_radius ?worst_radius))
 	=>	
 	(bind ?val_worst_radius (ask-question "### Worst radius? ### "))
 	(assert (ValWorstRadius ?val_worst_radius))
@@ -336,7 +335,6 @@
 ;;;
 (defrule ask-WorstPerimeter
 	?q <- (ask worst_perimeter ?ans)
-	?breast <- (breast (worst_perimeter ?worst_perimeter))
 	=>
 	(bind ?val_worst_perimeter (ask-question "### Worst perimeter? ### "))
 	(assert (ValWorstPerimeter ?val_worst_perimeter))
@@ -374,7 +372,6 @@
 ;;;
 (defrule ask-MeanTexture
 	?q <- (ask mean_texture ?ans)
-	?breast <- (breast (mean_texture ?mean_texture))
 	=>
 	(bind ?val_mean_texture (ask-question "### Mean texture? ### "))
 	(assert (ValMeanTexture ?val_mean_texture))
@@ -421,7 +418,6 @@
 ;;;
 (defrule ask-RadiusError
 	?q <- (ask radius_error ?ans)
-	?breast <- (breast (radius_error ?radius_error))
 	=>	
 	(bind ?val_radius_error (ask-question "### Radius Error? ### "))
 	(assert (ValRadiusError ?val_radius_error))
@@ -462,7 +458,6 @@
 ;;;
 (defrule ask-WorstTexture
 	?q <- (ask worst_texture ?ans)
-	?breast <- (breast (worst_texture ?worst_texture))
 	=>	
 	(bind ?val_worst_texture (ask-question "### Worst Texture? ### "))
 	(assert (ValWorstTexture ?val_worst_texture))
@@ -515,7 +510,6 @@
 ;;;
 (defrule ask-MeanSmoothness
 	?q <- (ask mean_smoothness ?ans)
-	?breast <- (breast (mean_smoothness ?mean_smoothness))
 	=>	
 	(bind ?val_mean_smoothness (ask-question "### Mean Smoothness? ### "))
 	(assert (ValMeanSmoothness ?val_mean_smoothness))
@@ -551,7 +545,6 @@
 ;;;
 (defrule ask-WorstArea
 	?q <- (ask worst_area ?ans)
-	?breast <- (breast (worst_area ?worst_area))
 	=>	
 	(bind ?val_worst_area (ask-question "### Worst Area? ### "))
 	(assert (ValWorstArea ?val_worst_area))
@@ -592,7 +585,6 @@
 ;;;
 (defrule ask-MeanRadius
 	?q <- (ask mean_radius ?ans)
-	?breast <- (breast (mean_radius ?mean_radius))
 	=>	
 	(bind ?val_mean_radius (ask-question "### Mean radius? ### "))
 	(assert (ValMeanRadius ?val_mean_radius))
@@ -639,7 +631,6 @@
 ;;;
 (defrule ask-ConcavePointsError
 	?q <- (ask concave_points_error ?ans)
-	?breast <- (breast (concave_points_error ?concave_points_error))
 	=>
 	(bind ?val_concave_points_error (ask-question "### Concave points error? ### "))
 	(assert (ValConcavePointsError ?val_concave_points_error))
@@ -675,7 +666,6 @@
 ;;;
 (defrule ask-WorstConcavePoints
 	?q <- (ask worst_concave_points ?ans)
-	?breast <- (breast (worst_concave_points ?worst_concave_points))
 	=>
 	(bind ?val_worst_concave_points (ask-question "### Worst concave points? ### "))
 	(assert (ValWorstConcavePoints ?val_worst_concave_points))
@@ -708,7 +698,6 @@
 ;;;
 (defrule ask-PerimeterError
 	?q <- (ask perimeter_error ?ans)
-	?breast <- (breast (perimeter_error ?perimeter_error))
 	=>
 	(bind ?val_perimeter_error (ask-question "### Perimeter Error? ### "))
 	(assert (ValPerimeterError ?val_perimeter_error))
